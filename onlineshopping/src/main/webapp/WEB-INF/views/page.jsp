@@ -60,8 +60,8 @@
 			</c:if>
 
 
-			<c:if test="${userClickProducts == true }">
-				<%@include file="products.jsp"%>
+			<c:if test="${userClickAllProducts == true or userClickCategoryProducts ==true}">
+				<%@include file="listProducts.jsp"%>
 			</c:if>
 		</div>
 		<%@include file="./shared/footer.jsp"%>
